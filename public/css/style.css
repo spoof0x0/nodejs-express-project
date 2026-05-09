@@ -1,0 +1,141 @@
+body {
+  margin: 0;
+  font-family: Arial;
+  background: #f4f6f8;
+}
+
+.layout {
+  display: flex;
+  height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 220px;
+  background: #1e293b;
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.link {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.link:hover {
+  background: #334155;
+}
+
+/* Main */
+.main {
+  flex: 1;
+  padding: 30px;
+}
+
+/* Card */
+/* .card {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  width: 400px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+} */
+
+.user-card {
+  background: #f8fafc;
+  padding: 15px;
+  margin-bottom: 15px;  
+  border-radius: 10px;
+  border: 1px solid #e2e8f0;
+}
+
+.user-card {
+  transition: 0.2s;
+}
+
+.user-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.btn-edit {
+  display: inline-block;
+  margin-top: 10px;
+  margin-right: 5px;
+  padding: 6px 10px;
+  background: #3b82f6;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+}
+
+/* Form */
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+  transition: 0.3s;
+}
+
+input:focus {
+  border-color: #3b82f6;
+}
+
+button {
+  padding: 12px;
+  background: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #2563eb;
+}
+
+.profile-card {
+  text-align: center;
+}
+
+.profile-info {
+  margin-top: 20px;
+  padding: 20px;
+  background: #f1f5f9;
+  border-radius: 12px;
+}
+
+.profile-info h2 {
+  margin-bottom: 10px;
+}
+
+.btn-delete {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 6px 10px;
+  background: red;
+  color: white;
+  text-decoration: none;
+  border: none;
+  border-radius: 6px;
+}

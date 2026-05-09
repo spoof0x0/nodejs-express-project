@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title><%= title %></title>
+
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<div class="layout">
+
+  <!-- Sidebar -->
+  <%- include('../partials/sidebar') %>
+
+  <!-- Main -->
+  <div class="main">
+
+    <div class="card">
+
+      <h1>All Users 👥</h1>
+
+      <% if (!users || users.length === 0) { %>
+
+        <p>No users found 🚀</p>
+
+      <% } else { %>
+
+        <% users.forEach(user => { %>
+
+          <div class="user-card">
+
+            <h3><%= user.name %></h3>
+            <p><%= user.email %></p>
+            <p><%= user.age %></p>
+
+            <a href="/user/delete/<%= user.name %>" class="btn-delete">
+              🗑️ Delete
+            </a>
+
+            <a href="/user/edit/<%= user.name %>" class="btn-edit">
+               ✏️ Edit
+            </a>
+
+          </div>
+
+        <% }) %>
+
+      <% } %>
+
+    </div>
+
+  </div>
+
+</div>
+
+<script src="/js/script.js"></script>
+</body>
+</html>

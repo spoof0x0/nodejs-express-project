@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title>Add User</title>
+
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<div class="layout">
+
+  <!-- Sidebar -->
+  <%- include('../partials/sidebar') %>
+
+  <!-- Main -->
+  <div class="main">
+
+    <div class="card">
+
+      <h1>Add New User</h1>
+
+      <form action="/user/add" method="POST" class="form">
+
+        <input
+          type="text"
+          name="name"
+          placeholder="Enter name"
+          required
+        >
+
+        <input
+          type="email"
+          name="email"
+          placeholder="Enter email"
+          required
+        >
+
+        <input
+          type="number"
+          name="age"
+          placeholder="Enter age"
+          required
+        >
+
+        <button type="submit">
+          ➕ Create User
+        </button>
+
+      </form>
+
+    </div>
+
+  </div>
+
+</div>
+
+<script src="/js/script.js"></script>
+</body>
+</html>

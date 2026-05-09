@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title><%= title %></title>
+
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<div class="layout">
+
+  <!-- Sidebar -->
+  <%- include('../partials/sidebar') %>
+
+  <!-- Main -->
+  <div class="main">
+
+    <div class="card profile-card">
+
+      <% if (!user) { %>
+
+        <h2>No Profile Found 😢</h2>
+        <p>Please add a user first</p>
+
+      <% } else { %>
+
+        <h1>👤 Profile</h1>
+
+        <div class="profile-info">
+
+          <h2><%= user.name %></h2>
+
+          <p><strong>Email:</strong> <%= user.email %></p>
+
+        </div>
+
+      <% } %>
+
+    </div>
+
+  </div>
+
+</div>
+
+<script src="/js/script.js"></script>
+</body>
+</html>

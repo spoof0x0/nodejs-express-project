@@ -1,0 +1,30 @@
+{
+  "name": "nodejs-express-project",
+  "version": "1.0.0",
+  "description": "first project",
+  "homepage": "https://github.com/spoof0x0/nodejs-express-project#readme",
+  "bugs": {
+    "url": "https://github.com/spoof0x0/nodejs-express-project/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/spoof0x0/nodejs-express-project.git"
+  },
+  "license": "ISC",
+  "author": "spoof0x0",
+  "type": "commonjs",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "watch": "npx nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "connect-livereload": "^0.6.1",
+    "ejs": "^5.0.2",
+    "express": "^5.2.1",
+    "livereload": "^0.10.3",
+    "mongoose": "^9.6.2"
+  },
+  "keywords": []
+}
